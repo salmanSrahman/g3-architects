@@ -1,4 +1,78 @@
-h1 {
-      color: red;
-      font-size: 50px;
+* {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Work Sans', sans-serif;
+}
+
+ul,
+ol {
+      list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p {
+      margin: 0;
+      padding: 0;
+}
+
+a {
+      display: inline-block;
+      text-decoration: none;
+}
+
+
+section {
+      margin-bottom: 70px;
+}
+
+.container {
+      width: 80%;
+      margin: 0 auto;
+
+}
+
+/* ======= common css end ============ */
+header {
+      background: #FFF4E7;
+      padding: 50px 0;
+}
+
+.menu_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.menu_logo {
+      width: 30%;
+}
+
+.menu_logo h1 {
+      font-size: 45px;
+      font-weight: bold;
+      color: #131313;
+}
+
+.main_menu ul {
+      display: flex;
+      column-gap: 45px;
+}
+
+.main_menu ul li a {
+      color: #424242;
+      font-size: 18px;
+      font-weight: 500;
 }
