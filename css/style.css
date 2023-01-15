@@ -83,7 +83,7 @@ footer {
 }
 
 .menu_logo h1 {
-      font-size: 45px;
+      font-size: 50px;
       font-weight: bold;
       color: #131313;
       font-family: 'Zen Tokyo Zoo', cursive;
@@ -532,7 +532,7 @@ footer {
 }
 
 .contact_form button {
-      padding: 10px 40px;
+      padding: 16px 44px;
       text-align: center;
       border: 0;
       background: #FF900E;
@@ -544,6 +544,8 @@ footer {
       cursor: pointer;
 
 }
+
+
 
 .contact_form button {
       color: #fff;
@@ -927,6 +929,11 @@ footer {
             width: 250px;
       }
 
+      .contact_form button {
+            padding: 10px 40px;
+
+      }
+
       .contact_text h3 {
             font-size: 25px;
             margin-bottom: 20px;
@@ -1166,6 +1173,11 @@ footer {
 
       .contact_form input:nth-child(3) {
             width: 350px;
+      }
+
+      .contact_form button {
+            padding: 10px 40px;
+
       }
 
       .contact_text h3 {
