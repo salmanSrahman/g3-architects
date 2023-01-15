@@ -321,16 +321,54 @@ section {
             facts part end
 ====================================== */
 /* =====================================
-            banner part start
+            sponsor part start
+====================================== */
+.sponsor_title {
+      text-align: center;
+}
+
+.sponsor_title h2 {
+      color: #131313;
+      font-size: 45px;
+      font-weight: bold;
+      margin-bottom: 24px;
+}
+
+.sponsor_title p {
+      color: #727272;
+      font-size: 16px;
+      line-height: 26px;
+      width: 542px;
+      margin: 0 auto;
+}
+
+/* =====================================
+            sponsor part end
 ====================================== */
 /* =====================================
-            banner part end
+            sponsor part start
 ====================================== */
+.sponsors {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5%;
+      margin-top: 50px;
+}
+
+.sponsor {
+      width: 19%
+}
+
+.sponsor img {
+      width: 120px;
+      height: auto;
+      filter: grayscale(100%)
+}
+
+
 /* =====================================
-            banner part start
-====================================== */
-/* =====================================
-            banner part end
+            sponsor part end
 ====================================== */
 /* =====================================
             banner part start
