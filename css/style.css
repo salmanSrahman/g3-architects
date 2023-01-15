@@ -39,6 +39,14 @@ section {
       margin-bottom: 70px;
 }
 
+nav,
+section,
+footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
 .container {
       width: 80%;
       margin: 0 auto;
@@ -66,10 +74,18 @@ section {
       width: 30%;
 }
 
+.main_menu {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+
 .menu_logo h1 {
       font-size: 45px;
       font-weight: bold;
       color: #131313;
+      font-family: 'Zen Tokyo Zoo', cursive;
 }
 
 .main_menu ul {
@@ -143,9 +159,8 @@ section {
             features part start
 ====================================== */
 .feature_inner {
-      display: grid;
-      grid-template-columns: 60% 40%;
-      grid-column-gap: 30px;
+      display: flex;
+      gap: 30px;
       align-items: center
 }
 
@@ -240,6 +255,11 @@ section {
       object-position: center;
 }
 
+.ex_point_inner {
+      display: flex;
+      flex-direction: column;
+}
+
 .ex_point {
       padding: 30px;
       border-radius: 30px;
@@ -285,13 +305,14 @@ section {
 }
 
 .fact_card {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       gap: 4%;
       margin-top: 70px;
 }
 
 .card {
-      width: 24%;
+
       text-align: center;
       border-radius: 8px;
       padding: 45px 35px;
@@ -586,33 +607,168 @@ section {
 /* =====================================
             footer part end
 ====================================== */
-/* =====================================
-            banner part start
-====================================== */
-/* =====================================
-            banner part end
-====================================== */
-/* =====================================
-            banner part start
-====================================== */
-/* =====================================
-            banner part end
-====================================== */
-/* =====================================
-            banner part start
-====================================== */
-/* =====================================
-            banner part end
-====================================== */
-
-
 
 /* =====================================
         media query part start
 ====================================== */
-/* @media only screen and (max-width:375.98px) {
-      header {
+@media only screen and (max-width:575.98px) {
+
+
+      .menu_logo {
+            width: 70%;
+      }
+
+      .main_menu {
+            width: 30%
+      }
+
+      .menu_logo h1 {
+            font-size: 25px;
+
+      }
+
+      .main_menu ul {
+            display: block;
+            margin-top: 30px;
+      }
+
+      .main_menu ul li {
+            padding: 5px 0;
+      }
+
+      .main_menu ul li a {
+            font-size: 15px;
+      }
+
+      /* menu part */
+      #banner_part {
+
+            padding: 150px 0 50px;
+      }
+
+      .banner_text h1 {
+            font-size: 25px;
+            margin-top: 20px;
+
+      }
+
+      .banner_text p {
+            margin: 20px auto;
+            font-size: 13px;
+            line-height: 24px;
+
+      }
+
+      .btn_primary {
+            padding: 12px 16px;
+            background: #FF900E;
+            font-size: 14px;
+
+      }
+
+      .banner_text img {
+            margin-top: 30px;
+      }
+
+      /* banner part end */
+      .feature_inner {
+            flex-direction: column-reverse;
+      }
+
+      .feature_img {
+            grid-template-columns: 1fr;
+      }
+
+      .feature_text h1 {
+            font-size: 25px;
+
+      }
+
+      .feature_text h2 {
+            font-size: 25px;
+      }
+
+      .feature_text p {
+            margin: 15px 0;
+            font-size: 13px;
+
+      }
+
+      /* feature part end */
+      .experience_inner {
+            flex-direction: column;
+            gap: 20px;
+      }
+
+      .experience_text {
             width: 100%;
       }
 
-} */
+      .experience_img {
+            width: 100%
+      }
+
+      .ex_point_inner {
+            flex-direction: column;
+      }
+
+      .ex_point {
+            width: 100%
+      }
+
+      .ex_title h1 {
+
+            font-size: 25px;
+      }
+
+      .experience_text p {
+            margin: 20px 0;
+            font-size: 13px;
+
+      }
+
+      .ex_point h3 {
+            font-size: 16px;
+            margin-bottom: 5px
+      }
+
+      .ex_point p {
+            font-size: 13px;
+            line-height: 24px;
+      }
+
+      /* experience part end */
+
+      .facts_title h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+      }
+
+      .facts_title p {
+            font-size: 13px;
+            line-height: 24px;
+            width: 342px;
+      }
+
+      .fact_card {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 30px;
+      }
+
+      .card {
+            padding: 25px 15px;
+      }
+
+      .card h2 {
+            font-size: 30px;
+      }
+
+      .card h6 {
+            font-size: 15px;
+      }
+
+
+}
+
+
+@media (min-width:576px) and (max-width:767.98px) {}
