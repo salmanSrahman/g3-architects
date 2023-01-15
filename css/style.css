@@ -452,7 +452,6 @@ section {
       color: #000000;
       cursor: pointer;
       display: inline-block;
-      font-family: Clarkson, Helvetica, sans-serif;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -507,7 +506,7 @@ section {
             footer part start
 ====================================== */
 #footer_part {
-      padding: 40px 0;
+      padding: 40px 0 20px;
       text-align: center;
       background: rgb(4, 4, 32);
 }
@@ -550,18 +549,23 @@ section {
       color: #E72A40;
 }
 
-.footer_bottom {
+.footer_top {
       color: #fff;
 }
 
-.footer_bottom p {
+.footer_top h2 {
+      font-family: 'Zen Tokyo Zoo', cursive;
+      font-size: 40px;
+}
+
+.footer_top p {
       font-weight: 400;
       font-size: 18px;
       color: #fff;
       padding-top: 10px;
 }
 
-.footer_bottom p span {
+.footer_top p span {
       display: block;
 }
 
@@ -571,6 +575,12 @@ section {
 
 .all_menu {
       display: block;
+}
+
+.footer_bottom {
+      text-align: center;
+      color: #424242;
+      margin-top: 50px;
 }
 
 /* =====================================
