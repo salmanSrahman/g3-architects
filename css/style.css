@@ -98,7 +98,16 @@ footer {
       color: #424242;
       font-size: 18px;
       font-weight: 500;
+      transition: all linear 0.3s;
 }
+
+.main_menu ul li a:hover {
+      color: #FF900E;
+}
+
+/* =====================================
+            menu part end
+====================================== */
 
 /* =====================================
             banner part start
@@ -281,6 +290,13 @@ footer {
       position: relative;
 }
 
+.experience_img img {
+      width: 100%;
+      height: 1059px;
+      object-fit: cover;
+      object-position: center;
+}
+
 .overlay {
       width: 342px;
       height: 200px;
@@ -341,12 +357,7 @@ footer {
       line-height: 26px;
 }
 
-.experience_img img {
-      width: 100%;
-      height: 1059px;
-      object-fit: cover;
-      object-position: center;
-}
+
 
 .ex_point_inner {
       display: flex;
@@ -456,12 +467,6 @@ footer {
       margin: 0 auto;
 }
 
-/* =====================================
-            sponsor part end
-====================================== */
-/* =====================================
-            sponsor part start
-====================================== */
 .sponsors {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -478,6 +483,10 @@ footer {
 
 /* =====================================
             sponsor part end
+====================================== */
+
+/* =====================================
+            contact part start
 ====================================== */
 #contact_part {
       padding: 60px 0 90px;
@@ -613,6 +622,10 @@ footer {
 }
 
 /* =====================================
+            contact part end
+====================================== */
+
+/* =====================================
             footer part start
 ====================================== */
 #footer_part {
@@ -683,6 +696,10 @@ footer {
         media query part start
 ====================================== */
 @media only screen and (max-width:575.98px) {
+      section {
+            margin-bottom: 60px
+      }
+
       #menu_part {
             padding: 0;
       }
@@ -696,7 +713,7 @@ footer {
       }
 
       .menu_logo h1 {
-            font-size: 25px;
+            font-size: 28px;
 
       }
 
@@ -779,6 +796,26 @@ footer {
 
       .experience_img {
             width: 100%
+      }
+
+      .experience_img img {
+            height: auto;
+            padding-bottom: 50px;
+      }
+
+      .overlay {
+            width: 142px;
+            height: 80px;
+            left: -35px;
+            bottom: 0;
+      }
+
+      .overlay h1 {
+            font-size: 25px;
+      }
+
+      .overlay h1 span {
+            font-size: 13px;
       }
 
       .ex_point_inner {
@@ -882,12 +919,12 @@ footer {
       }
 
       .contact_form input {
-            width: 300px;
+            width: 250px;
             margin: 10px auto;
       }
 
       .contact_form input:nth-child(3) {
-            width: 300px;
+            width: 250px;
       }
 
       .contact_text h3 {
@@ -909,6 +946,10 @@ footer {
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
+      section {
+            margin-bottom: 60px;
+      }
+
       .menu_logo {
             width: 30%;
       }
@@ -918,14 +959,9 @@ footer {
       }
 
       .menu_logo h1 {
-            font-size: 25px;
+            font-size: 28px;
 
       }
-
-      /* .main_menu ul {
-            display: block;
-            margin-top: 30px;
-      } */
 
       .main_menu ul li {
             padding: 5px 0;
@@ -967,7 +1003,7 @@ footer {
 
       /* banner part end */
       .feature_inner {
-            flex-direction: column-reverse;
+            flex-direction: column;
       }
 
       .feature_img {
@@ -1005,6 +1041,26 @@ footer {
 
       .experience_img {
             width: 100%
+      }
+
+      .overlay {
+            width: 162px;
+            height: 90px;
+            left: -35px;
+            bottom: 0;
+      }
+
+      .overlay h1 {
+            font-size: 25px;
+      }
+
+      .overlay h1 span {
+            font-size: 13px;
+      }
+
+      .experience_img img {
+            height: auto;
+            padding-bottom: 50px;
       }
 
       .ex_point_inner {
@@ -1129,3 +1185,7 @@ footer {
       }
 
 }
+
+/* =====================================
+        media query part end
+====================================== */
